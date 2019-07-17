@@ -1,6 +1,6 @@
 ## 项目介绍
 
-[Swoole WebSocket 的应用](https://github.com/xinliangnote/Swoole/blob/master/04-Swoole%20WebSocket%20的应用)
+[Swoole WebSocket 的应用](https://github.com/xinliangnote/Swoole/blob/master/04-Swoole%20WebSocket%20的应用.md)
 
 ## 效果图
 
