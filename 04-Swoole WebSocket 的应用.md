@@ -23,11 +23,11 @@ WebSocket 使得客户端和服务器之间的数据交换变得更加简单，�
 
 ![](https://github.com/xinliangnote/Swoole/blob/master/images/4_swoole_1.gif)
 
-![](https://github.com/xinliangnote/Swoole/blob/master/images/4_swoole_2.gif)
+![](https://github.com/xinliangnote/Swoole/blob/master/images/4_swoole_3.gif)
 
 手动版：
 
-![](https://github.com/xinliangnote/Swoole/blob/master/images/4_swoole_3.gif)
+![](https://github.com/xinliangnote/Swoole/blob/master/images/4_swoole_2.gif)
 
 ## 代码
 
