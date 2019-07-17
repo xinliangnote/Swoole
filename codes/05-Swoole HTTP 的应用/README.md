@@ -6,4 +6,4 @@
 
 ![](https://github.com/xinliangnote/Swoole/blob/master/images/5_swoole_1.png)
 
-![](https://github.com/xinliangnote/Swoole/blob/master/images/5_swoole_2.git)
+![](https://github.com/xinliangnote/Swoole/blob/master/images/5_swoole_2.gif)
