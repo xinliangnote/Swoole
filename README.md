@@ -12,7 +12,7 @@ Swoole 入门的学习笔记，从零开始学 Swoole。
 
 ## 源码指引
 
-:white_check_mark:[Swoole 弹幕](https://github.com/xinliangnote/Swoole/blob/master/codes/04-Swoole%20WebSocket%20的应用)
+:white_check_mark:[Swoole 实现弹幕效果](https://github.com/xinliangnote/Swoole/blob/master/codes/04-Swoole%20WebSocket%20的应用)
 
 ## 学习交流
 
