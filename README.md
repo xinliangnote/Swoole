@@ -10,6 +10,10 @@ Swoole 入门的学习笔记，从零开始学 Swoole。
 
 如果你发现本项目有内容上的错误，欢迎提交 issues 进行指正。
 
+## 源码指引
+
+:white_check_mark:[Swoole 弹幕](https://github.com/xinliangnote/Swoole/blob/master/codes/04-Swoole%20WebSocket%20的应用)
+
 ## 学习交流
 
 :star2: 关注微信公众号「新亮笔记」
