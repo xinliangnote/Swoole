@@ -18,6 +18,8 @@ Swoole 入门的学习笔记，从零开始学 Swoole。
 
 :white_check_mark:[Swoole 实现一个小框架](https://github.com/xinliangnote/Swoole/blob/master/codes/07-Swoole%20整合成一个小框架)
 
+:white_check_mark:[Swoole RPC 的实现](https://github.com/xinliangnote/Swoole/blob/master/codes/08-Swoole%20RPC%20的实现)
+
 
 ## 学习交流
 
