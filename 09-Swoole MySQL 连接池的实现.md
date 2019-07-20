@@ -487,4 +487,4 @@ https://github.com/louislivi/smproxy
 
 ## 源码
 
-[查看源码](https://github.com/xinliangnote/Swoole/blob/master/codes/09-Swoole%20MySQL%20的实现)
+[查看源码](https://github.com/xinliangnote/Swoole/blob/master/codes/09-Swoole%20MySQL%20连接池的实现)
