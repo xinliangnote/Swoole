@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Demo</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="width: 900px;height:400px;"></div>
+<script type="text/javascript">
+    if ("WebSocket" in window) {
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        var wsServer = 'ws://10.211.55.4:9509';
+        var ws = new WebSocket(wsServer);
+
+        ws.onopen = function (evt) {
+            if (ws.readyState == 1) {
+                console.log('WebSocket 连接成功...');
+            } else {
+                console.log('WebSocket 连接失败...');
+            }
+
+            if (ws.readyState == 1) {
+                ws.send('开始请求...');
+            } else {
+                alert('WebSocket 连接失败');
+            }
+        };
+
+        ws.onmessage = function (evt) {
+            console.log('Retrieved data from server: ' + evt.data);
+            var evt_data = jQuery.parseJSON(evt.data);
+            myChart.setOption({
+                xAxis: {
+                    data : evt_data.time
+                },
+                series: [{
+                    data: evt_data.value
+                }]
+            });
+
+        };
+
+        ws.onerror = function (evt) {
+            alert('WebSocket 发生错误');
+            console.log(evt);
+        };
+
+        ws.onclose = function() {
+            alert('WebSocket 连接关闭');
+            console.log('WebSocket 连接关闭...');
+        };
+
+        // 指定图表的配置项和数据
+        $.ajax({
+            url      : 'http://10.211.55.4:9509/', // 请求url
+            type     : "post", // 提交方式
+            dataType : "json", // 数据类型
+            data : {
+                'type'  : 'SW',
+                'token' : 'Bb1R3YLipbkTp5p0',
+                'param' : {
+                    'class'  : 'Statistic',
+                    'method' : 'init'
+                }
+            },
+            beforeSend:function() {
+
+            },
+            success : function(rs) {
+                if (rs.code != 1) {
+                    alert('获取数据失败');
+                } else {
+                    var option = {
+                        title: {
+                            text: 'API 调用量',
+                            x:'center'
+                        },
+                        tooltip: {
+                            trigger: 'axis',
+                            axisPointer: {
+                                animation: false
+                            }
+                        },
+                        xAxis: {
+                            type : 'category',
+                            data : rs.data.time
+                        },
+                        yAxis: {
+                            type: 'value',
+                            boundaryGap: [0, '100%'],
+                            name: '使用量',
+                            splitLine: {
+                                show: false
+                            }
+                        },
+                        series: [{
+                            name: '使用量',
+                            type: 'line',
+                            showSymbol: false,
+                            hoverAnimation: false,
+                            data: rs.data.value
+                        }]
+                    };
+
+                    // 使用刚指定的配置项和数据显示图表。
+                    if (option && typeof option === "object") {
+                        myChart.setOption(option, true);
+                    }
+                }
+            },
+            error : function(){
+                alert('服务器请求异常');
+            }
+        });
+    } else {
+        alert("您的浏览器不支持 WebSocket!");
+    }
+</script>
+</body>
+</html>
