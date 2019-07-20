@@ -1,6 +1,6 @@
 ## 项目介绍
 
-[Swoole 连接池 的实现](https://github.com/xinliangnote/Swoole/blob/master/09-Swoole%20MySQL%20连接池的实现.md)
+[Swoole MySQL 连接池的实现](https://github.com/xinliangnote/Swoole/blob/master/09-Swoole%20MySQL%20连接池的实现.md)
 
 ## 配置
 

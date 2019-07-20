@@ -1,6 +1,6 @@
 ## 项目介绍
 
-[Swoole 连接池 的实现](https://github.com/xinliangnote/Swoole/blob/master/10-Swoole%20Redis%20连接池的实现.md)
+[Swoole Redis 连接池的实现](https://github.com/xinliangnote/Swoole/blob/master/10-Swoole%20%20Redis%20连接池的实现.md)
 
 ## 配置
 
