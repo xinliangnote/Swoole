@@ -71,7 +71,7 @@ index.php 这是文件名称，大家叫什么都可以。
 
 2、WebSocket 例子，在 client/websocket 文件夹，实现了视频弹幕。
 
-3、HTTP 例子，在浏览器直接访问：http://ip:port，逻辑代码在 controller 文件夹。
+3、HTTP 例子，在浏览器直接访问：`http://ip:port`，逻辑代码在 controller 文件夹。
 
 4、TCP 例子，在 client/tcp 文件夹。
 
