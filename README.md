@@ -16,6 +16,9 @@ Swoole 入门的学习笔记，从零开始学 Swoole。
 
 :white_check_mark:[Swoole 实现HTTP服务](https://github.com/xinliangnote/Swoole/blob/master/codes/05-Swoole%20HTTP%20的应用)
 
+:white_check_mark:[Swoole 实现一个小框架](https://github.com/xinliangnote/Swoole/blob/master/codes/07-Swoole%20整合成一个小框架)
+
+
 ## 学习交流
 
 :star2: 关注微信公众号「新亮笔记」
