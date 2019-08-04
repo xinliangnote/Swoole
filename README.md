@@ -6,7 +6,22 @@ Swoole 入门的学习笔记，从零开始学 Swoole。
 
 持续更新... 
 
-## 项目指引
+## 项目结构
+
+```
+├─ Swoole
+│  ├─ 1.Swoole 启动一个服务，开启了哪些进程和线程？
+│  ├─ 2.Swoole Timer 的应用
+│  ├─ 3.Swoole Task 的应用
+│  ├─ 4.Swoole WebSocket 的应用
+│  ├─ 5.Swoole HTTP 的应用
+│  ├─ 6.Swoole 多协议、多端口的应用
+│  ├─ 7.Swoole 整合成一个小框架
+│  ├─ 8.Swoole RPC 的实现
+│  ├─ 9.Swoole MySQL 连接池的实现
+│  ├─ 10.Swoole Redis 连接池的实现
+│  ├─ 11.压测 swoole_websocket_server 性能
+```
 
 如果你发现本项目有内容上的错误，欢迎提交 issues 进行指正。
 
